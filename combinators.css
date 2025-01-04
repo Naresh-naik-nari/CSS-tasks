@@ -1,0 +1,59 @@
+.box p{
+ /* .container .box p{ */
+ /* .container .box>p{ */
+ /* .container p{ */
+    padding: 20px;
+    background-color: aqua;
+}
+.section .content p{
+/* .section .content>p{ */
+/* .section div p{ */
+    margin: 15px;
+    background-color: bisque;
+}
+.card .card-body p{
+/* .card-header p>.card-body p{ */
+/* .card .card-body>p{ */
+border: 2px solid red;
+}
+.navbar li{
+/* .navbar>ul{ */
+/* .navbar ul{ */
+    background-color: lightblue;
+}
+.header>h1{
+/* .header h1{ */
+    margin-top: 30px;
+    /* background-color: brown; */
+    display: inline-block;
+}
+.footer span{
+/* .footer>span{ */
+    padding: 10px;
+    background-color: gold;
+}
+.main-content .content p{
+/* .content p{ */
+/* .content>p{ */
+/* .main-content p{ */
+    border: 2px solid black;
+}
+.nav li{
+/* .nav>ul{ */
+/* .nav ul{ */
+/* .nav ul li{ */
+/* .nav ul>li{ */
+    margin-right: 150px;
+    background-color: aquamarine;
+}
+.gallery .photo{
+/* .gallery>.photo{ */
+    background-color: lightgray;
+}
+.container .footer span{
+/* .container>.footer>span{ */
+/* .container>.footer span{ */
+/* .container .footer>span{ */
+    border-radius: 10px;
+}
+
