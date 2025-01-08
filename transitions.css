@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    /* border: 5px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 1 1 200px; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+.box{
+    width: 360px;
+    margin: 5px;
+    height: 340px;
+    /* border: 5px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+.box:hover{
+    background-color: black;
+}
+.box>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+.box p{
+    position: absolute;
+    margin: 0px;
+    color: white;
+    font-size: 50px;
+    /* z-index: -1; */
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.box:hover p{
+    /* z-index: 1; */
+    opacity: 1;
+}
+.box:hover .parrat,
+.box:hover .tiger,
+.box:hover .lion,
+.box:hover .dog,
+.box:hover .cat,
+.box:hover .elephant,
+.box:hover .cheetahs,
+.box:hover .monkey{
+    opacity: 0;
+}
+
