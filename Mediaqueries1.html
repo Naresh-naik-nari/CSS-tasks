@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0px;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        .para {
+            width: 100%;
+            height: 80px;
+            /* border: 2px solid; */
+        }
+
+        @media (min-width: 600px) and (max-width: 1200px) {
+            .para {
+                font-size: 18px;
+            }
+        }
+
+        .box0 {
+            width: 700px;
+            height: 200px;
+            border: 2px solid;
+            /* background-color: black; */
+            /* display: flex; */
+        }
+
+        .box {
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            background-color: red;
+            border: 2px solid;
+            text-align: center;
+        }
+
+        @media (min-width: 700px) and (max-width: 1500px) {
+            .box0 {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                background-color: black;
+            }
+
+            .box {
+                background-color: white;
+            }
+
+        }
+        /* .h2{
+            width: 100%;
+            height: 100px;
+            border: 2px solid;
+        } */
+        @media (min-width: 500px) and (max-width: 800px) {
+            .h2{
+                color: green;
+            }
+        }
+        @media  (max-width: 400px) {
+            img{
+                display: none;
+            }
+        }
+        .container{
+            width: 300px;
+            height: 100px;
+            border: 2px solid;
+        }
+        @media (max-width: 1024px) {
+            .container{
+                padding: 20px;
+            }
+        }
+        img{
+            width: 400px;
+        }
+        .header{
+            width: 100%;
+            height: 40px;
+            border: 2px solid;
+        }
+        @media (min-width: 600px) and (max-width: 1200px) {
+            .header{
+                background-color: lightgray;
+            }
+        }
+        @media (max-width: 480px) {
+            .para1{
+                font-size: 16px;
+                color: red;
+            }
+        }
+        .para1{
+            width: 1005;
+            height: 60px;
+            border: 2px solid;
+        }
+        .column{
+            width: 100%;
+            /* height: 50px; */
+            border: 2px solid;
+        }
+        .column1{
+            width: 100%;
+            height: 50px;
+            border: 2px solid;
+            margin: 5px;
+            background-color: brown;
+        }
+        .column2{
+            width: 100%;
+            height: 50px;
+            border: 2px solid;
+            margin: 5px;
+            background-color: blue;
+        }
+        @media (min-width: 768px) and (max-width: 1200px) {
+            .column{
+                display: flex;
+            }
+        }
+        @media (max-width: 600px) {
+            .monkey{
+                width: 600px;
+            }
+        }
+        @media (min-width: 700px) and (max-width: 1200px) {
+            a{
+                color: blue;
+                text-decoration: none;
+            }
+        }
+        @media (min-width: 500px) and (max-width: 800px){
+            .h22{
+                font-size: 24px;
+            }
+        }
+        .div{
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+        }
+        @media (min-width: 1024px) {
+            .div{
+                border: 2px solid black;
+            }
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 2px solid;
+            text-align: center;
+        }
+        @media (min-width: 800px) and (max-width: 1200px) {
+            .item{
+                width: 450px;
+            }
+        }
+        .column0{
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            /* border: 2px solid; */
+        }
+        .column11{
+            width: 100%;
+            height: 50px;
+            border: 2px solid;
+            margin: 5px;
+            background-color: lightsalmon;
+        }
+        .column22{
+            width: 100%;
+            height: 50px;
+            border: 2px solid;
+            margin: 5px;
+            background-color: lightskyblue;
+        }
+        @media (max-width: 600px) {
+            .column0{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>task-2</h1>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium tenetur aut enim totam minima, ea, amet
+            facere perferendis tempore ab quidem eveniet accusamus officiis dolorem minus. Facilis architecto facere
+            dolor!
+            Hic, cumque consectetur minus ipsam assumenda nesciunt nulla delectus pariatur corporis doloribus possimus
+            nostrum aperiam amet veniam, quas, nemo explicabo soluta. Harum voluptate perferendis doloremque. Corporis
+            quibusdam nihil placeat at?</p>
+    </div>
+    <h1>task-3</h1>
+    <div class="box0">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+    <h1>task-4</h1>
+   <div class="h2">
+    <h2>Using `min-width` and `max-width`, write a media query to change the color of all `h1` elements to `green` when the viewport width is between 500px and 800px.</h2>
+   </div>
+   <h1>task-5</h1>
+   <img src="monkey.jpg" alt="">
+    <h1>task-6</h1>
+    <div class="container">
+        <p>Write a media query that increases the padding of a container to `20px` when the viewport is at least 1024px wide.</p>
+
+    </div>
+    <h1>task-7</h1>
+    <header class="header"></header>
+    <h1>task-8</h1>
+    <div class="para1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam incidunt corporis quae assumenda nostrum labore itaque, fuga dolor quo a at inventore eveniet, quos sed! Quibusdam aliquid deleniti ad.</p>
+
+    </div>
+    <h1>task-9</h1>
+    <div class="column">
+        <div class="column1"></div>
+        <div class="column2"></div>
+        <div class="column1"></div>
+    </div>
+    <h1>task-10</h1>
+    <div class="monkey">
+        <img src="monkey.jpg" alt="">
+    </div>
+    <h1>task-11</h1>
+    <a href="">Anchor Tags</a>
+    <br>
+    <a href="">Media Queries</a>
+    <h1>task-12</h1>
+    <h2 class="h22">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem quis, qui deserunt impedit perspiciatis est quasi nostrum excepturi reiciendis voluptatem ducimus nobis possimus. Optio aliquid iure tempore doloribus veritatis.</h2>
+     <h1>task-13</h1>
+     <div class="div"></div>
+     <h1>task-14</h1>
+     <div class="item">  
+    <p>HOME</p>
+    <p>about</p>
+    <p>services</p>
+    <p>contact</p>
+     </div>
+     <h1>task-15</h1>
+     <div class="column0">
+        <div class="column11"></div>
+        <div class="column22"></div>
+        <div class="column11"></div>
+        <div class="column22"></div>
+    </div>
+</body>
+
+</html>
