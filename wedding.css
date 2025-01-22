@@ -1,4 +1,7 @@
-*{
+
+body{
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     margin: 0PX;
     padding: 0px;
@@ -6,7 +9,6 @@
 }
 .header{
     display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -31,20 +33,18 @@
     background-size: cover;
     background-position: center center;
     display: flex;
-    flex: 1;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 .box{
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center; 
     color: white;
-    line-height: 70px;
 }
 .jane{
     font-size: 60px;
@@ -54,24 +54,19 @@
     word-spacing: 10px;
     letter-spacing: 5px;
 }
-
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
 .text{
     text-align: center;
     padding: 80px;
     font-size: 30px;
     color: #757575;
     letter-spacing: 2px;
-}
-html,body{
-    width: 100%;
-    height: 100%;
-}
-.main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .container{
     width: 65%;
@@ -85,9 +80,11 @@ html,body{
     font-style: italic;
     line-height: 25px;
     width: 100%;
+    /* font-size: 1,2rem; */
 }
 .image img{
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
 }
 .details{
     padding: 20px;
@@ -120,7 +117,8 @@ html,body{
 }
 .table img{
     border-radius: 8px;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 }
 .para1{
     display: flex;
@@ -146,11 +144,12 @@ input{
     display: none;
 }
 label{
-    padding: 20px 60px 20px 60px;
+    padding: 20px 60px;
     border-radius: 5px;
     background-color: red;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
 .end{
     width: 100%;
@@ -166,6 +165,9 @@ label{
     .header{
         display: none;
     }
+    .main{
+        width: 100%;
+    }
     .jane{
        font-size: 40px;
     }
@@ -177,13 +179,13 @@ label{
         display: flex;
         flex-direction: column;
     }
-    .end{
+    /* .end{
         display: none;
-    }
+    } */
     .para1{
         /* display: flex; */
         flex-direction: column;
-        gap: 7px;
+        gap: 15px;
         
     }
     .text{
@@ -196,6 +198,10 @@ label{
     }
     .jane{
         font-size: ;
+    }
+    .image img,.table img{
+        max-width: 500px;
+        width: 100%;
     }
 }
 
