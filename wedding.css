@@ -69,7 +69,7 @@ body{
     letter-spacing: 2px;
 }
 .container{
-    width: 65%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,11 +111,11 @@ body{
     color: #757575;
     margin: 50px;
 }
-.table img,.image img{
+/* img{
     border-radius: 8px;
     width: 100%;
     max-width: 1000px;
-}
+} */
 .para1{
     display: flex;
     margin-top: 70px;
@@ -126,10 +126,8 @@ body{
 .hope{
     width: 100%;
     height: 300px;
-    /* border: 2px solid; */
-    margin-top: 50px;
     text-align: center;
-    padding-top: 60px;
+    /* padding-top: 40px; */
     line-height: 60px;
     letter-spacing: 3px;
 }
@@ -149,12 +147,13 @@ label{
 }
 .end{
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: black;
     color: white;
     text-align: center;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 @media (max-width: 500px) {
@@ -175,11 +174,10 @@ label{
         display: flex;
         flex-direction: column;
     }
-    /* .end{
-        display: none;
-    } */
+    .para1 p{
+        line-height: 30px;
+    }
     .para1{
-        /* display: flex; */
         flex-direction: column;
         gap: 15px;
         
@@ -192,12 +190,15 @@ label{
         margin: 30px;
         font-size: 30px;
     }
-    .jane{
-        font-size: ;
-    }
     .image img,.table img{
         max-width: 500px;
         width: 100%;
+    }
+    .hope .you{
+        font-size: 1.5rem;
+    }
+    .hope p{
+        line-height: 30px;
     }
 }
 
