@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .item {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation: Naresh 1.4s infinite ease-in-out;
+
+
+        }
+
+        .item1 {
+            background-color: blue;
+            animation-name: Naresh;
+            animation-iteration-count: infinite;
+            animation-delay: 0.2s;
+
+
+
+        }
+
+        .item2 {
+            background-color: red;
+            animation-name: Naresh;
+            animation-iteration-count: infinite;
+            animation-delay: 0.3s;
+
+        }
+
+        .item3 {
+            background-color: yellow;
+            animation-name: Naresh;
+            animation-iteration-count: infinite;
+            animation-delay: 0.4s;
+
+
+        }
+
+        .item4 {
+            background-color: green;
+            animation-delay: 0.5s;
+
+
+        }
+
+
+        @keyframes Naresh {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .container2 {
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .bar {
+
+
+            border-radius: 10%;
+
+        }
+
+        .bar1 {
+            animation: increaseBar1 1s ease-in-out infinite;
+
+            height: 100px;
+            width: 50px;
+            background-image: linear-gradient(to bottom, rgb(150, 207, 17), rgb(199, 147, 147));
+        }
+
+        .bar2 {
+            animation: increaseBar2 1s ease-in-out infinite;
+
+            background-image: linear-gradient(to bottom, rgb(17, 17, 207), rgb(199, 147, 147));
+            height: 130px;
+            width: 50px;
+        }
+
+        .bar3 {
+            animation: increaseBar3 1s ease-in-out infinite;
+
+            background-image: linear-gradient(to bottom, rgb(172, 17, 207), rgb(199, 147, 147));
+            height: 180px;
+            width: 50px;
+        }
+
+        .bar4 {
+            animation: increaseBar4 1s ease-in-out infinite;
+            background-image: linear-gradient(to bottom, rgb(17, 207, 96), rgb(199, 147, 147));
+            height: 140px;
+            width: 50px;
+        }
+
+        .bar5 {
+            animation: increaseBar5 1s ease-in-out infinite;
+            background-image: linear-gradient(to bottom, rgb(207, 17, 20), rgb(199, 147, 147));
+            height: 120px;
+            width: 50px;
+        }
+
+        .bar6 {
+            animation: increaseBar6 1s ease-in-out infinite;
+            background-image: linear-gradient(to bottom, rgb(207, 80, 17), rgb(199, 147, 147));
+            height: 80px;
+            width: 50px;
+        }
+
+        @keyframes increaseBar1 {
+            0% {
+                height: 0px;
+            }
+
+        }
+
+        @keyframes increaseBar2 {
+            0% {
+                height: 90px;
+            }
+
+        }
+
+        @keyframes increaseBar3 {
+            0% {
+                height: 100px;
+            }
+
+        }
+
+        @keyframes increaseBar4 {
+            0% {
+                height: 70px;
+            }
+
+        }
+
+        @keyframes increaseBar5 {
+            0% {
+                height: 50px;
+            }
+
+        }
+
+        @keyframes increaseBar6 {
+            0% {
+                height: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+
+    </div>
+    <br>
+    <div class="container2">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+    </div>
+</body>
+
+</html>
